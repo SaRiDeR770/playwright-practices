@@ -1,7 +1,7 @@
 from playwright.sync_api import Page, expect
 import allure
 
-@allure.title('Невалидный логиy')
+@allure.title('Невалидный логин')
 def test_login (page: Page):
  with allure.step('Оставить поле "username" пустым'):
     page.goto('https://practice.expandtesting.com/login')
